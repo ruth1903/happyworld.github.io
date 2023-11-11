@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+} */
+/* Establecer un tamaño de fuente base para facilitar el cálculo de unidades relativas */
+html {
+    font-size: 16px;
+  }
+  
+  /* Hacer que todos los elementos se ajusten al tamaño de la pantalla */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Establecer un margen mínimo y relleno para el cuerpo de la página */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hacer que las imágenes y objetos multimedia sean responsivos */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Aplicar un ancho máximo al contenido para que no se expanda demasiado en pantallas grandes */
+  .container {
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenido en la página */
+  }
+  
+  /* Usar media queries para estilos específicos según el tamaño de la pantalla */
+  @media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas, como teléfonos móviles */
+  }
+  /* Estilos para el encabezado */
+  
+  
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #c7a17a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.promo-banner {
+    background-image: url('img/banner.jpg'); /* Reemplaza 'tu-imagen-promocional.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.promo-banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.promo-banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-promo {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #c7a17a; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-promo:hover {
+    background-color: #c7a17a; /* Cambia el color de fondo al pasar el cursor */
+    
+}
+/* Estilos para la sección de consulta de precios */
+.price-checker {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.price-checker h3 {
+    font-size: 24px;
+}
+
+#price-form {
+    margin-top: 20px;
+}
+
+#price-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#price-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#price-form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#price-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* Estilos para la sección de destinos más buscados */
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.destination-card {
+    width: 300px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.destination-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.btn-more {
+    display: block;
+    margin: 20px auto;
+    background-color: #c7a17a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para la sección de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #c7a17a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+.contact,
+.customer-service,
+.copyright,
+.trust {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px;
+}
+.about-us {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center; /* Añadir alineación centrada */
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    display: inline-block; /* Agregar display inline-block */
+    text-align: left; /* Revertir la alineación de texto a la izquierda */
+}
+
+.about-us h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left; /* Añadir alineación de texto a la izquierda */
+}
+
+.about-us ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.about-us ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+    text-align: left; /* Añadir alineación de texto a la izquierda */
+}
+.home-experiences {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.home-experiences h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.experience-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 300px;
+}
+
+.experience-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.experience-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.experience-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.home-packages {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.home-packages h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.package-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 300px;
+}
+
+.package-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.package-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.package-card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.btn-package {
+    display: inline-block;
+    background-color: #c7a17a; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-package:hover {
+    background-color: #c7a17a; /* Color de fondo del botón al pasar el mouse */
+   
+}
+.exchange-rate-value {
+    color: #4e4e4e; /* Color de resaltado para el tipo de cambio */
+    font-weight: bold;
+}
+.offers {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.offers h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.offer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 300px;
+}
+
+.offer-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.offer-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.discount-price, .current-price {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.current-price {
+    color: #181717; /* Color de resaltado para el precio actual */
+    font-weight: bold;
+}
+
+.btn-offer {
+    display: inline-block;
+    background-color: #c7a17a; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-offer:hover {
+    background-color: #c7a17a; /* Color de fondo del botón al pasar el mouse */
+}
+
+.destinations {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.destinations h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.destination-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 300px;
+}
+
+.destination-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.destination-price {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.btn-destination {
+    display: inline-block;
+    background-color: #c7a17a; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-destination:hover {
+    background-color: #c7a17a; /* Color de fondo del botón al pasar el mouse */
+}
+.privacy-policy {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.privacy-policy h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.privacy-policy p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.terms-and-conditions {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.terms-and-conditions h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+
+.terms-and-conditions p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+/* Estilos para la sección de búsqueda */
+.search {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.search h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #c7a17a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-results {
+    margin-top: 20px;
+    text-align: left;
+}

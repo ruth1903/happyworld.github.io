@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Happy World</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#"><i class="fa-solid fa-plane-departure"></i></a>
+            <h1 class="logo"><a href="/">Happy World</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="#">Tipo de Cambio <span class="exchange-rate-value">1 USD = 19.50 MXN</span></a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="forms.html"><i class="fas fa-user"></i> Iniciar Sesión</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        </div>
+    </header>
+    <section class="promo-banner">
+        <h2>Planifica tu viaje!</h2>
+        <p>Descubre el mundo, un viaje a la vez ¿qué esperas?</p>
+        <a href="#" class="btn-promo">Ver ofertas</a>
+    </section>
+
+    <section class="search">
+        <h2>Encuentra tu Próximo Destino</h2>
+        <div class="search-container">
+            <div class="search-input">
+                <label for="from">Desde:</label>
+                <input type="text" id="from" placeholder="Lugar de salida">
+            </div>
+            <div class="search-input">
+                <label for="to">Hacia:</label>
+                <input type="text" id="to" placeholder="Destino">
+            </div>
+            <div class="search-input">
+                <label for="date">Fecha de Salida:</label>
+                <input type="date" id="date">
+            </div>
+            <button id="search-button">Buscar</button>
+        </div>
+        <div id="search-results"></div>
+    </section>
+    
+
+    <main class="destination-container">
+        <div class="destination-card">
+            <img src="img/mexico.png" alt="Destino 1">
+            <h3>México</h3>
+            <p>¡Ni yendo a bailar a Chalma!</p>
+        </div>
+        <div class="destination-card">
+            <img src="img/africa.png" alt="Destino 2">
+            <h3>Africa</h3>
+            <p> “Como un baobab, los brazos de un solo hombre no bastan para abarcarlo”</p>
+        </div>
+        <div class="destination-card">
+            <img src="img/americ.png" alt="Destino 3">
+            <h3>America</h3>
+            <p>El éxito parece estar relacionado con la acción!</p>
+        </div>
+        <div class="destination-card">
+            <img src="img/europa.png" alt="Destino 4">
+            <h3>Europa</h3>
+            <p>"Unida en la diversidad" </p>
+        </div>
+    </main>
+    <button class="btn-more">Ver más destinos</button>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="img/gallery1.jpg" alt="Imagen 1">
+        </div>
+        <div class="gallery-item">
+            <img src="img/gallery2.jpg" alt="Imagen 2">
+        </div>
+        <div class="gallery-item">
+            <img src="img/gallery3.jpg" alt="Imagen 3">
+        </div>
+        <div class="gallery-item">
+            <img src="img/gallery4.jpg" alt="Imagen 4">
+        </div>
+        <div class="gallery-item">
+            <img src="img/gallery5.jpg" alt="Imagen 5">
+        </div>
+        <div class="gallery-item">
+            <img src="img/gallery1.jpg" alt="Imagen 6">
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h3>CONTACTANOS</h3>
+            <p>AG Happy World</p>
+            <p>AG_HappW</p>
+            <p>5611522365</p>
+            <p>2569875</p>
+        </div>
+        <div class="customer-service">
+            <h3>SERVICIO AL CLIENTE</h3>
+            <ul>
+                <li>Ayuda</li>
+                <li>Consultar reservación</li>
+                <li>Modificar reservación</li>
+                <li>Cancelar reservación</li>
+                <li>Facturación electrónica</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <h3>COPYRIGHT</h3>
+            <p>Moreno Martínez Alma Ruth</p>
+            <p>Nuci Vazquez Andrea</p>
+            <p>Otero Lopez Andrik Axel</p>
+            <p>Perez Rojas Luis Eduardo</p>
+            <p>Salazar Mendieta Jesús Ángel</p>
+            <p>Solís Morales Jorge Aaron</p>
+        </div>
+        <div class="trust">
+            <h3>CONFIANZA EN TUS COMPRAS</h3>
+            <ul>
+                <li><a href="terminos.html"></a>Términos y condiciones</a></li>
+                <li><a href="aviso.html"></a>Aviso de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://kit.fontawesome.com/7086fe76ac.js" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+    
+</body>
+</html>
